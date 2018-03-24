@@ -217,7 +217,7 @@ footer p{
     padding:2%;
     display: -ms-grid;
     display:grid;
-    grid-gap:5% 2%;
+    /*grid-gap:5% 2%;*/
     -ms-grid-column-span:2%;
     -ms-grid-row-span:5;
     -ms-grid-columns:1fr;
@@ -265,6 +265,7 @@ footer p{
 }
 
 @media only screen and (min-width:780px){
+
   /*flexbox fallback*/
   .grid{
     -webkit-flex-direction: row;
@@ -322,7 +323,7 @@ footer p{
     -ms-grid-row-span:2.5%;
     grid-gap:2.5%;
     -ms-grid-rows:200px 50px 150px 525px 500px 150px 150px auto auto;
-    grid-template-rows: 250px 50px 150px 525px 500px 150px 150px auto auto;
+    grid-template-rows: auto;
     -ms-grid-columns:minmax(360px,1fr) minmax(360px,1fr);
     grid-template-columns: minmax(360px,1fr) minmax(360px,1fr);
   }
@@ -440,6 +441,7 @@ footer p{
 }
 
 @media only screen and (min-width:1000px){
+
   /*flexbox*/
   .intro, .learn, .feature{
     min-width: 0;
